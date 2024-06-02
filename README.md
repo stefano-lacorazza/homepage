@@ -28,3 +28,5 @@ To view the resume, simply open the `index.html` file in any web browser.
 For any inquiries, please reach out via email at `stefano.lacorazza@gmail.com`.
 
 ## License
+
+This project is open source, under the [MIT License](LICENSE).
