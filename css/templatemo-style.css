@@ -458,6 +458,8 @@ a#logo {
 .about-img {
   margin: 0 auto 40px;
   position:relative;
+  width: 80%;
+  height: auto;
 }
 .about-img img {
   border-radius: 10px;
