@@ -135,6 +135,8 @@ video {
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  -o-filter: blur(2px);
+  filter: blur(2px);
 }
 #video:after {
   content: '';
