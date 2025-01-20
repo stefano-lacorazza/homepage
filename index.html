@@ -1,334 +1,628 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
-    <title>Résumé</title>
-  </head>
-  <body>
-    <button id="button">
-      <i class="fa fa-volume-up"></i>
-    </button>
-    <a href="https://api.whatsapp.com/send?phone=573112873140&text=Hola."
-    class="wpfloat" target="_blank">
-    <i class="fa fa-whatsapp my-float fa-2x " style="padding-top: 10px;"></i>
-  </a>
-  <audio src="assets/mario.mp3" ></audio>
-  <audio id="hoverSound" src="assets/powerup.mp3" preload="auto" autoplay></audio>
-    <main>
-      <!-- Main resume container -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Stefano Lacorazza">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 
-      <div class="resume-container">
-        
+    <title>Stefano Lacorazza - FullStack Developer</title>
 
-      
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-        <div class="resume">
-          <div class="container">
-            <div class="resume__block">
-              <!-- Name and profession -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
-              <h1 class="contact-info__header">Stefano Lacorazza</h1>
-              <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
-      
-              <!-- Contact information container -->
-              <div class="contact_info_container fh">
-                <div class="contact-info__block">
-                  <a href="" rel="author" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path
-                          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0
-                          192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
-                          13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
-                          80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span>Bogota, Colombia</span>
-                  </a>
-  
-                  
-                </div>
-                <div class="container">
-                  <div class="resume__block">
-                    <div class="intro">
-                      <div class="intro__icon-wrapper">
-                        <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path
-                            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
-                            24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
-                            26.5 21.5 48 48 48h128c26.5 0 48-21.5
-                            48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
-                            64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0
-                            103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0
-                            48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p class="intro_text">I'm a physicist with ample experience as an educator. My solid grasp of mathematics and statistics
-                         provides me with a strong foundation for approaching analytical problems.
-                            As a development professional, I have notable expertise in designing and producing web applications. 
-                            This includes back-end development using Python and Django, as well as front-end implementation with a mastery 
-                            of essential tools such as HTML, JavaScript, CSS, and React.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-      
-                <!-- Profile picture -->
-                <div class="contact-info__block contact-info__block--center">
-                  <img id = "profile-pic" class="contact-info__avatar" src="assets/Stefano.jpg" alt="Avatar" />
-                </div>
-      
-              </div>
-              <div class="container">
-                <div class="skills__block">
-                  <h3 class="skills__header">Skills</h3>
-  
-                  <ul class="skills__list">
-                    <li class="skills__item">Python</li>
-                    <li class="skills__item">Pandas</li>
-                    <li class="skills__item">Numpy</li>
-                    <li class="skills__item">Django</li>
-                    <li class="skills__item">HTML</li>
-                    <li class="skills__item">CSS</li>
-                    <li class="skills__item">JavaScript</li>
-                    <li class="skills__item">React</li>
-                    <li class="skills__item">Node.js</li>
-                    <li class="skills__item">SQL</li>
-                    <li class="skills__item">Git</li>
-                    <li class="skills__item">R</li>
-                    
-                    <!-- Add more skills as needed -->
-                  </ul>
-                  <div id="mario" data-y="30"></div>
-                </div>
-              </div>
-              <div class="container">
-                <div class="contact-info__block">
-                  <!-- Phone number -->
-                  <a href="tel:+1234567890" class="contact-info__item">
-                    <span class="contact-info__item-icon-wrapper">
-                      <i class="fa fa-phone"></i>
-                    </span>
-                    +57 3112873140
-                  </a>
-                
-                  <!-- Email -->
-                  <a href="mailto:stefano.lacorazza@gmail.com" class="contact-info__item">
-                    <span class="contact-info__item-icon-wrapper">
-                      <i class="fa fa-envelope"></i>
-                    </span>
-                    stefano.lacorazza@gmail.com
-                  </a>
-                
-                  <!-- LinkedIn -->
-                  <a href="https://www.linkedin.com/in/stefano-lacorazza-developer/" class="contact-info__item">
-                    <span class="contact-info__item-icon-wrapper">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                    LinkedIn
-                  </a>
-                
-                  <!-- GitHub -->
-                  <a href="https://github.com/stefano-lacorazza" class="contact-info__item">
-                    <span class="contact-info__item-icon-wrapper">
-                      <i class="fa fa-github-square"></i>
-                    </span>
-                    GitHub
-                  </a>
-                </div>
-  
-              </div>
-  
-              
-              <div class="container">
-                <div class="resume__block">
-                  <!-- Main information section -->
-                  <div class="main-info fh">
-                    <!-- Experiences section -->
-                    <div class="experiences">
-                      <h3 class="experiences__header">Experience</h3>
-  
-                      <div class="experiences__company">
-                        <div class="experiences__company-header">
-                          <span class="experiences__company-header-durability">2022-Present</span>
-                          <h3 class="experiences__company-header-name">Eurocarga SAS</h3>
-                        </div>
-                        <div class="experiences__company-project">
-                          <span class="experiences__company-project-role">Webapp Designer</span>
-                          <h3 class="experiences__company-project-name">Eurocarga Website</h3>
-                          <ul class="experiences__company-project-responsibilities">
-                            <li>UI design</li>
-                            <li>Backtend Development</li>
-                            <li>Code Maintenance</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="experiences__company">
-                        <div class="experiences__company-header">
-                          <span class="experiences__company-header-durability">2013-2022</span>
-                          <h3 class="experiences__company-header-name">Fractal Monitorias</h3>
-                        </div>
-                        <div class="experiences__company-project">
-                          <span class="experiences__company-project-role">Manager</span>
-  
-                          <ul class="experiences__company-project-responsibilities">
-                            <li>Education programs design</li>
-                            <li>Private tutorings</li>
-                            <li>Exam grading</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="experiences__company">
-                        <div class="experiences__company-header">
-                          <span class="experiences__company-header-durability">2014-2015</span>
-                          <h3 class="experiences__company-header-name">Universidad de los Andes</h3>
-                        </div>
-                        <div class="experiences__company-project">
-                          <span class="experiences__company-project-role">Linear Algebra Professor</span>
-                          <ul class="experiences__company-project-responsibilities">
-                            <li>Teaching </li>
-                            <li>Grade exams</li>
-                            <li>Design classes</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="experiences__company">
-                        <div class="experiences__company-header">
-                          <span class="experiences__company-header-durability">2013-2014</span>
-                          <h3 class="experiences__company-header-name">Universidad de los Andes</h3>
-                        </div>
-                        <div class="experiences__company-project">
-                          <span class="experiences__company-project-role">Physics Professor</span>
-                          <ul class="experiences__company-project-responsibilities">
-                            <li>Teaching </li>
-                            <li>Grade exams</li>
-                            <li>Design classes</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-              
-                    <div class="additional-info fv">
-                      <!-- Education information -->
-                      <div class="additional-info__education">
-                        <h3 class="additional-info__education-header">Education</h3>
-        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2016 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">Physics</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">Universidad de los Andes</p>
-                        </div>
-        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2022 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">Python Specialization</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">University of Michigan - Coursera</p>
-                        </div>
-        
-                        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2022 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">Django Specialization</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">University of Michigan - Coursera</p>
-                        </div>
-        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2023 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">Data science Specialization</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">University of Michigan - Coursera</p>
-                        </div>
-        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2023 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">Data Analysis with R Programming</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">Google - Coursera</p>
-                        </div>
-        
-                        <div class="additional-info__education-university">
-                          <!-- Year of graduation -->
-                          <span class="additional-info__education-university-durability"> 2023 </span>
-                          <!-- Speciality -->
-                          <h3 class="additional-info__education-university-speciality">React Basics</h3>
-                          <!-- University name -->
-                          <p class="additional-info__education-university-name">Meta - Coursera</p>
-                        </div>
-        
-                       
-                      </div>
-                    
-                      <!-- Languages section -->
-                      <div class="additional-info__languages">
-                        <h3 class="additional-info__languages-header">Languages</h3>
-                        <!-- Language items -->
-                        <p class="additional-info__languages-item">English</p>
-                        <p class="additional-info__languages-item">Spanish</p>
-                        <p class="additional-info__languages-item">Italian</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <section id="projects">
-                  <div class="projects">
-                    <h2 class="projects__header">Projects</h2>
-                    <div class="project">
-                      <h3 class="projects__project-header-name">Logistics company website</h3>
-                      <p class="projects__project-role">Lead designer</p>
-                      <h4 class="projects__company-project-name">Eurocarga</h4>
-                      <p class="projects__project-description">The Eurocarga Logistics Company Website aims to establish an online presence for Eurocarga, a leading logistics and transportation company. The website will serve as a comprehensive platform to showcase Eurocarga’s services, enhance customer engagement, and facilitate efficient communication with clients.</p>
-                      <a href="https://eurocarga-qqhgo.ondigitalocean.app/" class="projects__project-website">Visit Website</a>
-                    </div>
-                    <br>
-                    <div class="project">
-                      <h3 class="projects__project-header-name">E-commerce for colombian artist</h3>
-                      <p class="projects__project-role">Lead designer</p>
-                      <h4 class="projects__company-project-name">Atrio Pottery</h4>
-                      <p class="projects__project-description">The Atrio Website aims to showcase the exquisite craftsmanship and cultural heritage of a talented Colombian pottery artist. Through this website, visitors can explore the artist’s unique creations, learn about their creative process, and appreciate the rich traditions woven into each piece of pottery.</p>
-                      <a href="https://laco89.pythonanywhere.com/" class="projects__project-website">Visit Website</a>
-                    </div>
-                    <br>
-                    <div class="project">
-                      <h3 class="projects__project-header-name">Logistics company website and Webapp</h3>
-                      <p class="projects__project-role">Lead designer</p>
-                      <h4 class="projects__company-project-name">Eurocarga</h4>
-                      <p class="projects__project-description">The first version of the Eurocarga Logistics Company Website aims to establish an online presence for Eurocarga, a leading logistics and transportation company. The website will serve as a comprehensive platform to showcase Eurocarga’s services, enhance customer engagement, and facilitate efficient communication with clients.</p>
-                      <a href="https://www.eurocarga.com.co/" class="projects__project-website">Visit Website</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+    
+    <body>
+    
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
-          </div>
         </div>
-      </div>
 
-      
-    </main>
-    <script src="scripts.js"></script>
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="#" id="logo" title="Stefano Lacorazza">
+                        Stefano Lacorazza
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">Services</a></li>
+                                    <li data-menuanchor="slide04"><a href="#slide04">My Skills</a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide05">My Work</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Certifications</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="images/video-bg.mp4" type="video/mp4">
+        </video>
+
+        <div id="fullpage" class="fullpage-default">
+
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="welcome-box">
+                        <span class="welcome-first animate" data-animate="fadeInUp">Hello, my name is</span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp">stefano lacorazza</h1>
+                        <p class="animate" data-animate="fadeInUp">I'm a Full Stack Developer, physicist, and educator who excels in web application development.</p>
+                        <div class="scroll-down next-section animate" data-animate="fadeInUp"><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide02">
+                <div class="section-inner">
+                    <div class="about-section">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 wide-col-laptop">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="about-contentbox">
+                                            <div class="animate" data-animate="fadeInUp">
+                                                <span>About Me</span>
+                                                <h2>Who am i?</h2>
+                                                <p> I am a physicist with extensive experience as an educator. My strong foundation in mathematics and statistics equips me to tackle analytical problems effectively. As a development professional, I excel in designing and producing web applications. My expertise spans back-end development with Python, Django, and Next.js, and front-end implementation using essential tools like HTML, JavaScript, Angular, and React. </p>
+                                            </div>
+                                            <div class="facts-list owl-carousel">
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">+20</span> Certifications
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">2</span> Degrees
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">+15</span> Working Years
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/profile.jpg" class="rounded" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide03">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Services</span>
+                                <h2>What I Do?</h2>
+                            </div>
+                            <div class="services-section">
+                                <div class="services-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
+                                            <h3>User Interface (UI) Design</h3>
+                                            <p>I create visually appealing and user-friendly interfaces to enhance user experience and engagement.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-code" aria-hidden="true"></i></span>
+                                            <h3>JavaScript Frameworks</h3>
+                                            <p>I leverage powerful JavaScript frameworks like React, Angular, and next.js to build dynamic, responsive web applications that deliver an exceptional user experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                            <h3>API Integration</h3>
+                                            <p>I integrate third-party APIs to enhance the functionality and connectivity of web applications, ensuring communication between different systems.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+                                            <h3>Database Management</h3>
+                                            <p>I design, manage, and optimize databases to ensure efficient and secure storage, retrieval, and handling of data.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-server" aria-hidden="true"></i></span>
+                                            <h3>Server-Side Scripting</h3>
+                                            <p>I write efficient back-end code using tools like Node.js and Django, to handle the logic, data processing, and server communication for web applications. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-terminal" aria-hidden="true"></i></span>
+                                            <h3>API Development</h3>
+                                            <p>I create robust and scalable APIs to facilitate communication between different systems, ensuring smooth data exchange and functionality.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-share" aria-hidden="true"></i></span>
+                                            <h3>Deployment</h3>
+                                            <p>I handle the deployment of web applications, ensuring they are launched smoothly and run efficiently in production environments by utilizing tools like Docker, Kubernetes, and CI/CD pipelines.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-microchip" aria-hidden="true"></i></span>
+                                            <h3>Machine Learning</h3>
+                                            <p>I develop and implement machine learning models to analyze data, predict outcomes, and automate processes, enhancing decision-making and efficiency. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-table" aria-hidden="true"></i></span>
+                                            <h3>Data Analysis and Visualization</h3>
+                                            <p>I use Python tools like Pandas, NumPy, Matplotlib, Seaborn, and Plotly to analyze data and create insightful visualizations.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-magnet" aria-hidden="true"></i></span>
+                                            <h3>Web Scraping</h3>
+                                            <p>I extract and collect data from websites to provide valuable insights and automate data gathering processes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide04">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>My Skills</span>
+                                <h2>What i’m good at?</h2>
+                            </div>
+                            <div class="skills-row animate" data-animate="fadeInDown">
+                                <section id="team" class="team_area section-padding">
+                                    <div class="container">								
+                                        <div class="row text-center">
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/html.png" alt="">
+                                                        <h3 class="responsive-text" data-section="slide04">HTML/CSS</h3>
+                                                    </div>	
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/js.png" alt="">
+                                                        <h3 class="responsive-text">JavaScript
+                                                            TypeScript
+                                                        </h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/react (1).jpg" alt="">
+                                                        <h3 class="responsive-text">React</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/angular.jpeg" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Angular</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/nodejs.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Node.js</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/Python-logo-notext.svg.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Python</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/django.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Django
+                                                            Django REST
+                                                        </h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/sql.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">SQL</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/postgresql.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">PostgreSQL</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/R.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">R</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/AWS.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">AWS</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/jest.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Jest</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/postman.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Postman</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/docker.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Docker</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/selenium.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Selenium</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/pandas.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Pandas</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/matplotlib.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Matplotlib</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+                                            <div class="col-lg-2 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                <div class="our-team">
+                                                    <div class="single-team">
+                                                        <img src="images/skills/git.png" class="img-fluid d-none d-sm-block" alt="">
+                                                        <h3 class="responsive-text">Git</h3>
+                                                    </div>	
+                                                </div>	
+                                            </div>	
+
+                                        </div><!--- END ROW -->			
+                                    </div><!--- END CONTAINER -->
+                                    
+                                
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide06">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>My Work</span>
+                                <h2>what i’ve done?</h2>
+                            </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/outreach-vids.gif" alt="">
+                                            </div>
+                                            <a href="https://github.com/BinaryStudioAcademy/bsa-2024-outreachvids" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>OutreachVids</h4>
+                                                    <p>A cutting-edge web app that leverages AI to generate videos featuring customizable avatars.</p>
+                                                    <p class="font-weight-bold">Techs: React, TypeScript, Node.js, Express, PostgreSQL, AWS,  Jest, Fastify, OpenAI, Azure AI Speech.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/donajuana.png" alt="">
+                                            </div>
+                                            <a href="https://ganaderiadonajuana.com/" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>Ganadería Doña Juana</h4>
+                                                    <p>A comprehensive website for a cattle farm in Colombia, showcasing their products and services. The website includes detailed product descriptions, service offerings, an intuitive navigation system, and visually appealing design elements to highlight the farm's unique qualities and commitment to quality.</p>
+                                                    <p class="font-weight-bold">Techs: HTML, CSS, JavaScript.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/eurocarga.png" alt="">
+                                            </div>
+                                            <a href="https://eurocarga.com.co/" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>Eurocarga site</h4>
+                                                    <p>A robust tracking web application and an engaging landing page for a logistics company in Colombia. The project features tracking capabilities, user authentication, and an intuitive dashboard. The landing page effectively showcases the company's services, highlights key features, and provides an intuitive user experience.</p>
+                                                    <p class="font-weight-bold">Techs: Python, Django, HTML, CSS, JavaScript.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/fight.png" alt="">
+                                            </div>
+                                            <a href="https://github.com/stefano-lacorazza/street-fighter-clone" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>JS Fighting game</h4>
+                                                    <p>An engaging browser-based fighting game featuring characters inspired by Street Fighter. The project includes dynamic combat mechanics, responsive controls, character animations, and an immersive user interface to provide a captivating gaming experience.</p>
+                                                    <p class="font-weight-bold">Techs: HTML, CSS, JavaScript, Typescript, Node.Js.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/typing.png" alt="">
+                                            </div>
+                                            <a href="https://github.com/stefano-lacorazza/typing-game" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>Two player typing game</h4>
+                                                    <p>An interactive browser-based game that allows multiple players to compete in real-time typing challenges, enhancing typing speed and accuracy through engaging and competitive gameplay.</p>
+                                                    <p class="font-weight-bold">Techs: HTML, CSS, JavaScript, Typescript, Node.Js, sockets.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/airbnb.png" alt="">
+                                            </div>
+                                            <a href="https://github.com/stefano-lacorazza/react-airbnb-clone" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>AirBnb Clone</h4>
+                                                    <p>A fully functional web application that replicates the core features of Airbnb. The project includes user authentication, property listings, booking functionality, and an intuitive user interface to provide an engaging user experience.</p>
+                                                    <p class="font-weight-bold">Techs: React, JavaScript, Typescript, Node.Js, APIs, Postman.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/Franflix.png" alt="">
+                                            </div>
+                                            <a href="https://github.com/stefano-lacorazza/moviedb" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>Franflix</h4>
+                                                    <p>A dynamic movie database application that displays images, titles, release years, and ratings of movies. The application allows users to search for movies, mark their favorites, and access up-to-date information from a real-time movie API.</p>
+                                                    <p class="font-weight-bold">Techs: React, JavaScript, Typescript, Node.Js, APIs, Postman.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/projects/Atrio.png" alt="">
+                                            </div>
+                                            <a href="https://github.com/stefano-lacorazza/josecommerce" target="_blank">
+                                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                    <h4>Django Pottery E-Commerce</h4>
+                                                    <p>An e-commerce web application for a pottery artist, allowing users to browse, compare, and purchase unique pottery products. The platform features a user-friendly interface, secure payment processing, and real-time inventory updates to provide a great shopping experience..</p>
+                                                    <p class="font-weight-bold">Techs: Python, Django, HTML, CSS, JavaScript</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide05">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>CERTIFICATIONS</span>
+                                <h2>What have I achieved?</h2>
+                            </div>
+                            <div class="col-md-8 offset-md-2">
+                                <div class="testimonials-section">
+                                    <div class="testimonials-slider owl-carousel">
+                                        <a href="https://study.binary-studio.com/certificate/eabe27b4-ef8a-4463-88bf-51969198e285" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/01.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/01d3711b542de2911b868a89c2c18d58" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/02.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/134e59418079d954726caff76c78cffa" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/03.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/931837bc199b60d736d71c349ce8abde" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/04.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/7411a4973b74f5391bb552906453f961" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/05.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/20dd90d4788194cbe526d0ae1e32235c" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/06.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/d730a187328a0a5aa343c5937c60d480" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/07.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/8b7a11d2c9d16cc5fe2d1d8b82d7150e" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/08.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/3712251118ad458c972327d272a37264" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/09.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/c0fde1dac5fb16344bca05892b120e81" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/10.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/3e853d17efbf984ed3769c56eb98a677" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/11.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/fe015fd1cea715b73db011f6697448dd" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/12.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/e3b85909eb697a941bebadbcd38c0fcd" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/13.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/e2f03b3fea9857f20c55c16d7efda242" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/14.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/197b1bf064805ec416c15b966a655fa3" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/15.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/86acb85fcb873644944eb8819c2b5416" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/16.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/5bfbaf49f64c748e03e0e06eeca761f8" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/17.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/f6a9954f379efdfdbfca443b45edc7f8" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/18.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/36c0dff004fc6dc63dea95fd289e21aa" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/19.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        <a href="https://coursera.org/share/f763d225a6c91c661de0ae1f135bb873" target="_blank">
+                                            <img class="item animate" data-animate="fadeInUp" src="images/certifications/20.png" alt="Certification Image" style="width: 100%; height: auto;">
+                                        </a>
+                                        
+                
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="social-icons">
+            <div class="text-right">
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/stefano-lacorazza-developer/" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/stefano-lacorazza" title="GitHub"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=573112873140&text=Hello" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.min.js"></script>
+
+    <script src="js/scrolloverflow.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+    <script src="js/custom.js"></script>
+
+
   </body>
 </html>
